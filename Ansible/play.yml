@@ -1,9 +1,4 @@
 ---
-- name: Update all packages to the latest version
-  apt:
-    name: aptitude 
-    upgrade: yes
-
 - name: Pre Configure
   become: yes
   hosts: default
