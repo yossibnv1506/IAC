@@ -12,4 +12,6 @@
 
 - name: Check that a page returns a status 200 and fail if 'Hello World' is not in the page contents
   uri:
-    url: http://{{ myHost }}  
+    url: http://{{ myHost }} 
+    return content: yes
+    register: webpage
