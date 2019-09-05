@@ -12,11 +12,4 @@
 
 - name: Check that a page returns a status 200 and fail if 'Hello World' is not in the page contents
   uri:
-    url: http://{{ myHost }}
-    method: GET
-    return_content: yes
-    timeout : 60
-  register: webpage
-  failed_when: "'Hello World' not in webpage.content"
-  
-  
+    url: http://{{ myHost }}  
