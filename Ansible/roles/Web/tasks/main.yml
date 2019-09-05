@@ -14,6 +14,7 @@
   uri:
     url: http://{{ myHost }}
     return_content: yes
+    timeout : 60
   register: out
   failed_when: "'Hello World' not in out.content"
   
